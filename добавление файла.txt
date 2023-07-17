@@ -1,0 +1,45 @@
+
+user@Dmitriy MINGW64 ~
+$ cd testing
+
+user@Dmitriy MINGW64 ~/testing (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        "\320\276\320\276\320\276 \321\200\320\276\320\263\320\260 \320\270 \320\272\320\276\320\277\321\213\321\202\320\260.docx"
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+user@Dmitriy MINGW64 ~/testing (main)
+$ git add .
+
+user@Dmitriy MINGW64 ~/testing (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   "\320\276\320\276\320\276 \321\200\320\276\320\263\320\260 \320\270 \320\272\320\276\320\277\321\213\321\202\320\260.docx"
+
+
+user@Dmitriy MINGW64 ~/testing (main)
+$ git commit -m 'text'
+[main 48eeabe] text
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 "\320\276\320\276\320\276 \321\200\320\276\320\263\320\260 \320\270 \320\272\320\276\320\277\321\213\321\202\320\260.docx"
+
+user@Dmitriy MINGW64 ~/testing (main)
+$ git push -u origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 253 bytes | 253.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To github.com:DmitriyKharkov/testing.git
+   80cb2b0..48eeabe  main -> main
